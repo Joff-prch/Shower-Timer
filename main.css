@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+*{
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #E1ECFE;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: #000;
+    height: 100px;
+    
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1{
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+header div {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/* MAIN */
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    align-items: center;
+    padding: 0 75px 0 150px;
+}
+
+
+#indications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#indications h4{
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    bottom: 25px;
+}
+
+#indications h4 span {
+    font-weight: bold;
+}
+
+#indications-input {
+    background-color: white;
+    width: 480px;
+    height: 165px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    
+}
+
+#timer {
+    width: 450px;
+}
+
+#timer h4{
+    font-size: 48px;    
+    font-weight: normal;
+}
+
+#timer-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#timer-set {
+    background-color: #fff;
+    width: 240px;
+    height: 80px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    text-align: center;
+}
+
+#timer-set input {
+    border: none;
+    width: 70px;
+    text-align: center;
+    font-size: 46px;
+    
+}
+
+
+#timer-btn {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 20px;
+}
+#start, #reset{
+    width: 210px;
+    height: 80px;
+    border: none;
+    border-radius: 30px;
+    font-size: 38px;
+}
+
+#start {
+    background-color: #11FFBD;
+    
+}
+#start:hover {
+    border: 1px solid black;
+
+}
+#reset {
+    background-color: #747474;
+    
+}
+#reset:hover {
+    border: 1px solid black;
+}
+
+#art-img{
+    display: flex;
+    flex-direction: column;
+}
+#art-img a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+#art-img img{
+    width: 50vw;
+}
+
+@media (max-width:900px) {
+    #art-img {
+        display: none;
+    }
+    
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main section {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        align-items: center;
+        padding: 0;
+    }
+    header {
+        width: auto;
+    }
+    header div {
+        display: none;
+    }
+    h1{
+        margin-left: 20px;
+    }
+
+    
+    /* MAIN */
+    
+    #indications h4{
+        font-size: 20px;
+        position: initial;
+    }
+
+    
+    #indications-input {
+        width: 350px;
+        height: 125px;
+        font-size: 50px;
+    }
+    
+    #timer {
+        width: 350px;
+    }
+    #timer-set {
+        width: 220px;
+    }
+    
+    #timer h4{
+        font-size: 40px;    
+    }
+    
+    #start, #reset{
+        width: 150px;
+        border-radius: 20px;
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width:400px) {
+    h1 {
+        font-size: 27px;
+    }
+    main section {
+        margin-top: 50px;
+    }
+    #indications-input {
+        width: 280px;
+        font-size: 47px;
+    }
+
+    #timer {
+        width: 290px;
+    }
+
+    #timer h4{
+        font-size: 35px;    
+    }
+
+    #timer-set {
+        width: 177px;
+    }
+
+    #timer-set input {
+        width: 70px;
+        font-size: 35px;
+    }
+
+    #timer-input {
+        width: 300px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    #timer-btn {
+        justify-content: space-evenly;
+    }
+
+    #start, #reset{
+        margin-top: 20px;
+        width: 120px;
+        height: 70px;
+        border-radius: 20px;
+        font-size: 26px;
+    }
+}
